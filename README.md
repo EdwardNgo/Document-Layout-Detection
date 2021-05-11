@@ -11,3 +11,4 @@ git clone https://github.com/Wild-Rift/Document-Layout-Analysis.git
 pip install -r requirements.txt
 ```
 3. Download Model at: https://drive.google.com/file/d/1YK7zOoapq3aeCVZMg_OHhfERUUDxSt-U/view?usp=sharing
+4. Move model to model/
