@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>File Upload</title>
+  </head>
+  <body>
+    <h1>File Upload</h1>
+    <form method="POST" action="" enctype="multipart/form-data">
+      <p><input type="file" name="file"></p>
+      <p><input type="submit" value="Submit"></p>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script>
+
+    <hr>
+    {% if filename %}
+      <img src="{{ url_for('upload', filename=filename) }}" >
+    {% endif %}
+    {% if annotations %}
+        <img src="{{ url_for('annotations', filename=filename) }}">
+    {% endif %}
+  </body>
+</html>
